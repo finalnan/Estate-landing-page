@@ -1,4 +1,10 @@
+import Companies from '@/components/Companies';
+import Details from '@/components/Details';
+import Footer from '@/components/Footer';
+import CallToAction from '@/components/CallToAction';
+import Guide from '@/components/Guide';
 import Hero from '@/components/Hero';
+import Properties from '@/components/Properties';
 import Head from 'next/head';
 
 export default function Home() {
@@ -10,9 +16,13 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div>
-        <Hero />
-      </div>
+      <Hero />
+      <Companies />
+      <Guide />
+      <Properties />
+      <Details />
+      <CallToAction />
+      <Footer />
     </>
   );
 }
